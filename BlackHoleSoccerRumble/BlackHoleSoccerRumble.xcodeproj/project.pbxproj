@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80716FD21B9348A100C39C16 /* StartUpScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 80716FD11B9348A100C39C16 /* StartUpScene.sks */; };
+		80716FD41B9349D600C39C16 /* StartUpScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80716FD31B9349D600C39C16 /* StartUpScene.swift */; };
+		80716FD61B934E8700C39C16 /* GameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 80716FD51B934E8700C39C16 /* GameOverScene.sks */; };
+		80716FD81B934E9A00C39C16 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80716FD71B934E9A00C39C16 /* GameOverScene.swift */; };
 		8090A2711B92F7820040FBB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8090A2701B92F7820040FBB1 /* AppDelegate.swift */; };
 		8090A2731B92F7820040FBB1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8090A2721B92F7820040FBB1 /* GameScene.swift */; };
 		8090A2751B92F7820040FBB1 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8090A2741B92F7820040FBB1 /* GameScene.sks */; };
@@ -31,6 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		80716FD11B9348A100C39C16 /* StartUpScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartUpScene.sks; sourceTree = "<group>"; };
+		80716FD31B9349D600C39C16 /* StartUpScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartUpScene.swift; sourceTree = "<group>"; };
+		80716FD51B934E8700C39C16 /* GameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOverScene.sks; sourceTree = "<group>"; };
+		80716FD71B934E9A00C39C16 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		8090A26B1B92F7820040FBB1 /* BlackHoleSoccerRumble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackHoleSoccerRumble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8090A26F1B92F7820040FBB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8090A2701B92F7820040FBB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +105,10 @@
 				8090A2761B92F7820040FBB1 /* Images.xcassets */,
 				8090A2781B92F7820040FBB1 /* MainMenu.xib */,
 				8090A26E1B92F7820040FBB1 /* Supporting Files */,
+				80716FD11B9348A100C39C16 /* StartUpScene.sks */,
+				80716FD31B9349D600C39C16 /* StartUpScene.swift */,
+				80716FD51B934E8700C39C16 /* GameOverScene.sks */,
+				80716FD71B934E9A00C39C16 /* GameOverScene.swift */,
 			);
 			path = BlackHoleSoccerRumble;
 			sourceTree = "<group>";
@@ -208,8 +220,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8090A2981B92FA430040FBB1 /* knight.atlasc in Resources */,
+				80716FD21B9348A100C39C16 /* StartUpScene.sks in Resources */,
 				8090A2751B92F7820040FBB1 /* GameScene.sks in Resources */,
 				8090A2771B92F7820040FBB1 /* Images.xcassets in Resources */,
+				80716FD61B934E8700C39C16 /* GameOverScene.sks in Resources */,
 				8090A27A1B92F7820040FBB1 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,8 +244,10 @@
 			files = (
 				8090A2941B92FA260040FBB1 /* Hero.swift in Sources */,
 				8090A2901B92FA0C0040FBB1 /* Ball.swift in Sources */,
+				80716FD81B934E9A00C39C16 /* GameOverScene.swift in Sources */,
 				8090A2961B92FA310040FBB1 /* knight_gfx.swift in Sources */,
 				8090A2731B92F7820040FBB1 /* GameScene.swift in Sources */,
+				80716FD41B9349D600C39C16 /* StartUpScene.swift in Sources */,
 				8090A2711B92F7820040FBB1 /* AppDelegate.swift in Sources */,
 				8090A2921B92FA150040FBB1 /* BlackHole.swift in Sources */,
 			);
@@ -424,6 +440,7 @@
 				8090A28B1B92F7820040FBB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8090A28C1B92F7820040FBB1 /* Build configuration list for PBXNativeTarget "BlackHoleSoccerRumbleTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +449,7 @@
 				8090A28E1B92F7820040FBB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

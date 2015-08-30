@@ -21,6 +21,16 @@ class Hero {
         
     }
     
+    func getBottomPosition() -> CGFloat {
+        return sp.position.y - CGFloat(sp.size.height)/2
+    }
+    
+    func moveStuckedHeroIntoScreen() {
+        var y = sp.position.y
+        var h = CGFloat(sp.size.height)
+        sp.position.y = h/2
+    }
+    
     func MoveRight() {
         if (!rightAnimRunning || leftAnimRunning) {
             sp.xScale = CGFloat(1.0)

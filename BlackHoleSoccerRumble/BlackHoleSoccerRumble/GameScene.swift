@@ -9,17 +9,23 @@ import SpriteKit
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
 
+    func goal(node:SKNode) {
+        score++
+        myLabel.text = "Score: \(score)"
+        BlackHole.Eat(node)
+    }
+
     let hero = Hero()
     let myLabel = SKLabelNode(fontNamed:"Chalkduster")
+    let timeRemainingLabel = SKLabelNode(fontNamed:"Chalkduster")
     var score = 0
+    
     
     func didBeginContact(contact:SKPhysicsContact){
         if (contact.bodyA != nil && contact.bodyA.node != nil && contact.bodyB != nil && contact.bodyB.node != nil)
         {
             let node2:SKNode = contact.bodyB.node!;
             let node1:SKNode = contact.bodyA.node!
-            let catA = node1.physicsBody!.categoryBitMask
-            let catB = node2.physicsBody!.categoryBitMask
             let nameA = node1.name;
             let nameB = node2.name;
             if ( nameA == "ball" && nameB == "basket")
@@ -42,11 +48,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     func applyReverseImpulse(node:SKNode) {
 //        node.physicsBody!.applyForce(CGVector(dx:-0.1*node.physicsBody!.velocity.dx,dy:-0.1*node.physicsBody!.velocity.dy))
     }
-    func goal(node:SKNode) {
-        score++
-        myLabel.text = "Score: \(score)"
-        BlackHole.Eat(node)
-    }
+    
+    
     
 
     func addBricks() {
@@ -83,7 +86,34 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
     }
     
+    var count = 5
+    var timer = NSTimer()
+    
+    func update() {
+        
+        if(count > 0) {
+            timeRemainingLabel.text = "Time remaining: \(count--)"
+        }
+        else {
+            timer.invalidate()
+            let transition = SKTransition.revealWithDirection(SKTransitionDirection.Down, duration: 1.0)
+            
+            let scene = GameOverScene(size: self.scene!.size)
+            scene.scaleMode = SKSceneScaleMode.AspectFill
+            
+            self.scene!.view!.presentScene(scene, transition: transition)
+        }
+        
+    }
     override func didMoveToView(view: SKView) {
+        count = 60
+        timeRemainingLabel.text = "Time remaining: \(count)"
+        timeRemainingLabel.fontSize = 65;
+        timeRemainingLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame)-250);
+        self.addChild(timeRemainingLabel)
+
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
+
         myLabel.text = "Score: \(score)"
         myLabel.fontSize = 65;
         myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame)-200);
@@ -102,18 +132,19 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
     }
     
+    
     override func keyDown(theEvent: NSEvent) {
-        if (theEvent.keyCode == 14){ // E=right
+        if (theEvent.keyCode == 0x7C){
             hero.MoveRight()
         }
-        else if (theEvent.keyCode == 12){ // Q=left
+        else if (theEvent.keyCode == 0x7B){
             hero.MoveLeft()
         }
         
         if (theEvent.keyCode == 49){
             hero.Jump()
         }
-        if (theEvent.keyCode == 1){
+        if (theEvent.keyCode == 0x7D){
             hero.Stomp()
         }
     }
@@ -121,5 +152,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
+        if (hero.getBottomPosition() < 0)
+        {
+            hero.moveStuckedHeroIntoScreen()
+        }
     }
 }
