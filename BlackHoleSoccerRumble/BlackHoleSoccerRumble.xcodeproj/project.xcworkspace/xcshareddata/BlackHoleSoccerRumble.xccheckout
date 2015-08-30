@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AF0E5E71-9F29-4ABC-A8B9-5FF630B900AB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BlackHoleSoccerRumble</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3EA4ADD878369EAE34FF238A2842621B4D203EF3</key>
+		<string>https://github.com/LarsBergqvist/BlackHoleSoccerRumble.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BlackHoleSoccerRumble/BlackHoleSoccerRumble.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3EA4ADD878369EAE34FF238A2842621B4D203EF3</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/LarsBergqvist/BlackHoleSoccerRumble.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3EA4ADD878369EAE34FF238A2842621B4D203EF3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3EA4ADD878369EAE34FF238A2842621B4D203EF3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BlackHoleSoccerRumble</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -14,15 +14,12 @@ class BlackHole {
     }
     
     class func CreateSprite() -> SKSpriteNode {
-//        let sp = SKSpriteNode(imageNamed:"Spaceship")
-//        let spTexture = SKTexture(imageNamed: "Spaceship")
         let sp = SKSpriteNode(imageNamed:"blackhole")
         let spTexture = SKTexture(imageNamed: "blackhole")
         sp.position = GetLeftTopPosition()
         sp.setScale(1.5)
         var s = sp.size
         sp.physicsBody = SKPhysicsBody( circleOfRadius: 100)
-//        sp.physicsBody = SKPhysicsBody( texture: spTexture, alphaThreshold:0.0, size: sp.size)
         sp.physicsBody!.allowsRotation = false
         sp.physicsBody!.dynamic = false
         sp.physicsBody!.mass = 1
