@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8090A2711B92F7820040FBB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8090A2701B92F7820040FBB1 /* AppDelegate.swift */; };
+		8090A2731B92F7820040FBB1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8090A2721B92F7820040FBB1 /* GameScene.swift */; };
+		8090A2751B92F7820040FBB1 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8090A2741B92F7820040FBB1 /* GameScene.sks */; };
+		8090A2771B92F7820040FBB1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8090A2761B92F7820040FBB1 /* Images.xcassets */; };
+		8090A27A1B92F7820040FBB1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8090A2781B92F7820040FBB1 /* MainMenu.xib */; };
+		8090A2861B92F7820040FBB1 /* BlackHoleSoccerRumbleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8090A2851B92F7820040FBB1 /* BlackHoleSoccerRumbleTests.swift */; };
+		8090A2901B92FA0C0040FBB1 /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8090A28F1B92FA0C0040FBB1 /* Ball.swift */; };
+		8090A2921B92FA150040FBB1 /* BlackHole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8090A2911B92FA150040FBB1 /* BlackHole.swift */; };
+		8090A2941B92FA260040FBB1 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8090A2931B92FA260040FBB1 /* Hero.swift */; };
+		8090A2961B92FA310040FBB1 /* knight_gfx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8090A2951B92FA310040FBB1 /* knight_gfx.swift */; };
+		8090A2981B92FA430040FBB1 /* knight.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 8090A2971B92FA430040FBB1 /* knight.atlasc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8090A2801B92F7820040FBB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8090A2631B92F7820040FBB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8090A26A1B92F7820040FBB1;
+			remoteInfo = BlackHoleSoccerRumble;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8090A26B1B92F7820040FBB1 /* BlackHoleSoccerRumble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackHoleSoccerRumble.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8090A26F1B92F7820040FBB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8090A2701B92F7820040FBB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8090A2721B92F7820040FBB1 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		8090A2741B92F7820040FBB1 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		8090A2761B92F7820040FBB1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8090A2791B92F7820040FBB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8090A27F1B92F7820040FBB1 /* BlackHoleSoccerRumbleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackHoleSoccerRumbleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8090A2841B92F7820040FBB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8090A2851B92F7820040FBB1 /* BlackHoleSoccerRumbleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackHoleSoccerRumbleTests.swift; sourceTree = "<group>"; };
+		8090A28F1B92FA0C0040FBB1 /* Ball.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
+		8090A2911B92FA150040FBB1 /* BlackHole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackHole.swift; sourceTree = "<group>"; };
+		8090A2931B92FA260040FBB1 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		8090A2951B92FA310040FBB1 /* knight_gfx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knight_gfx.swift; sourceTree = "<group>"; };
+		8090A2971B92FA430040FBB1 /* knight.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = knight.atlasc; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8090A2681B92F7820040FBB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8090A27C1B92F7820040FBB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8090A2621B92F7820040FBB1 = {
+			isa = PBXGroup;
+			children = (
+				8090A26D1B92F7820040FBB1 /* BlackHoleSoccerRumble */,
+				8090A2821B92F7820040FBB1 /* BlackHoleSoccerRumbleTests */,
+				8090A26C1B92F7820040FBB1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8090A26C1B92F7820040FBB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8090A26B1B92F7820040FBB1 /* BlackHoleSoccerRumble.app */,
+				8090A27F1B92F7820040FBB1 /* BlackHoleSoccerRumbleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8090A26D1B92F7820040FBB1 /* BlackHoleSoccerRumble */ = {
+			isa = PBXGroup;
+			children = (
+				8090A2951B92FA310040FBB1 /* knight_gfx.swift */,
+				8090A2931B92FA260040FBB1 /* Hero.swift */,
+				8090A2911B92FA150040FBB1 /* BlackHole.swift */,
+				8090A28F1B92FA0C0040FBB1 /* Ball.swift */,
+				8090A2701B92F7820040FBB1 /* AppDelegate.swift */,
+				8090A2721B92F7820040FBB1 /* GameScene.swift */,
+				8090A2741B92F7820040FBB1 /* GameScene.sks */,
+				8090A2761B92F7820040FBB1 /* Images.xcassets */,
+				8090A2781B92F7820040FBB1 /* MainMenu.xib */,
+				8090A26E1B92F7820040FBB1 /* Supporting Files */,
+			);
+			path = BlackHoleSoccerRumble;
+			sourceTree = "<group>";
+		};
+		8090A26E1B92F7820040FBB1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8090A2971B92FA430040FBB1 /* knight.atlasc */,
+				8090A26F1B92F7820040FBB1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8090A2821B92F7820040FBB1 /* BlackHoleSoccerRumbleTests */ = {
+			isa = PBXGroup;
+			children = (
+				8090A2851B92F7820040FBB1 /* BlackHoleSoccerRumbleTests.swift */,
+				8090A2831B92F7820040FBB1 /* Supporting Files */,
+			);
+			path = BlackHoleSoccerRumbleTests;
+			sourceTree = "<group>";
+		};
+		8090A2831B92F7820040FBB1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8090A2841B92F7820040FBB1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8090A26A1B92F7820040FBB1 /* BlackHoleSoccerRumble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8090A2891B92F7820040FBB1 /* Build configuration list for PBXNativeTarget "BlackHoleSoccerRumble" */;
+			buildPhases = (
+				8090A2671B92F7820040FBB1 /* Sources */,
+				8090A2681B92F7820040FBB1 /* Frameworks */,
+				8090A2691B92F7820040FBB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlackHoleSoccerRumble;
+			productName = BlackHoleSoccerRumble;
+			productReference = 8090A26B1B92F7820040FBB1 /* BlackHoleSoccerRumble.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8090A27E1B92F7820040FBB1 /* BlackHoleSoccerRumbleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8090A28C1B92F7820040FBB1 /* Build configuration list for PBXNativeTarget "BlackHoleSoccerRumbleTests" */;
+			buildPhases = (
+				8090A27B1B92F7820040FBB1 /* Sources */,
+				8090A27C1B92F7820040FBB1 /* Frameworks */,
+				8090A27D1B92F7820040FBB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8090A2811B92F7820040FBB1 /* PBXTargetDependency */,
+			);
+			name = BlackHoleSoccerRumbleTests;
+			productName = BlackHoleSoccerRumbleTests;
+			productReference = 8090A27F1B92F7820040FBB1 /* BlackHoleSoccerRumbleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8090A2631B92F7820040FBB1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Lars Bergqvist";
+				TargetAttributes = {
+					8090A26A1B92F7820040FBB1 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					8090A27E1B92F7820040FBB1 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 8090A26A1B92F7820040FBB1;
+					};
+				};
+			};
+			buildConfigurationList = 8090A2661B92F7820040FBB1 /* Build configuration list for PBXProject "BlackHoleSoccerRumble" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8090A2621B92F7820040FBB1;
+			productRefGroup = 8090A26C1B92F7820040FBB1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8090A26A1B92F7820040FBB1 /* BlackHoleSoccerRumble */,
+				8090A27E1B92F7820040FBB1 /* BlackHoleSoccerRumbleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8090A2691B92F7820040FBB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8090A2981B92FA430040FBB1 /* knight.atlasc in Resources */,
+				8090A2751B92F7820040FBB1 /* GameScene.sks in Resources */,
+				8090A2771B92F7820040FBB1 /* Images.xcassets in Resources */,
+				8090A27A1B92F7820040FBB1 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8090A27D1B92F7820040FBB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8090A2671B92F7820040FBB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8090A2941B92FA260040FBB1 /* Hero.swift in Sources */,
+				8090A2901B92FA0C0040FBB1 /* Ball.swift in Sources */,
+				8090A2961B92FA310040FBB1 /* knight_gfx.swift in Sources */,
+				8090A2731B92F7820040FBB1 /* GameScene.swift in Sources */,
+				8090A2711B92F7820040FBB1 /* AppDelegate.swift in Sources */,
+				8090A2921B92FA150040FBB1 /* BlackHole.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8090A27B1B92F7820040FBB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8090A2861B92F7820040FBB1 /* BlackHoleSoccerRumbleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8090A2811B92F7820040FBB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8090A26A1B92F7820040FBB1 /* BlackHoleSoccerRumble */;
+			targetProxy = 8090A2801B92F7820040FBB1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8090A2781B92F7820040FBB1 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8090A2791B92F7820040FBB1 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8090A2871B92F7820040FBB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8090A2881B92F7820040FBB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8090A28A1B92F7820040FBB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BlackHoleSoccerRumble/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8090A28B1B92F7820040FBB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BlackHoleSoccerRumble/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8090A28D1B92F7820040FBB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlackHoleSoccerRumbleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlackHoleSoccerRumble.app/Contents/MacOS/BlackHoleSoccerRumble";
+			};
+			name = Debug;
+		};
+		8090A28E1B92F7820040FBB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlackHoleSoccerRumbleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlackHoleSoccerRumble.app/Contents/MacOS/BlackHoleSoccerRumble";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8090A2661B92F7820040FBB1 /* Build configuration list for PBXProject "BlackHoleSoccerRumble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8090A2871B92F7820040FBB1 /* Debug */,
+				8090A2881B92F7820040FBB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8090A2891B92F7820040FBB1 /* Build configuration list for PBXNativeTarget "BlackHoleSoccerRumble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8090A28A1B92F7820040FBB1 /* Debug */,
+				8090A28B1B92F7820040FBB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8090A28C1B92F7820040FBB1 /* Build configuration list for PBXNativeTarget "BlackHoleSoccerRumbleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8090A28D1B92F7820040FBB1 /* Debug */,
+				8090A28E1B92F7820040FBB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8090A2631B92F7820040FBB1 /* Project object */;
+}
