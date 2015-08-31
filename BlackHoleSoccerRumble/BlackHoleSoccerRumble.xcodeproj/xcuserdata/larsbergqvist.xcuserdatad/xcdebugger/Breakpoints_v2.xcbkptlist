@@ -10,28 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BlackHoleSoccerRumble/AppDelegate.swift"
-            timestampString = "462637671.932697"
+            timestampString = "462699745.884347"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "applicationDidFinishLaunching(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BlackHoleSoccerRumble/GameScene.swift"
-            timestampString = "462656813.681519"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
-            landmarkName = "update()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -90,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BlackHoleSoccerRumble/Hero.swift"
-            timestampString = "462657328.079351"
+            timestampString = "462697101.718932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "moveStuckedHeroIntoScreen()"
             landmarkType = "5">
          </BreakpointContent>

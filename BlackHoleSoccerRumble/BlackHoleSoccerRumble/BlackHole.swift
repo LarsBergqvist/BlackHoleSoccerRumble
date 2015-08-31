@@ -6,17 +6,14 @@ class BlackHole {
         return 0x02
     }
     
-    class func GetCenter() -> CGPoint {
-        return CGPoint(x:800, y: 600+30)
-    }
-    class func GetLeftTopPosition() -> CGPoint {
+    class func GetCenterPosition() -> CGPoint {
         return CGPoint(x:800, y: 600)
     }
     
     class func CreateSprite() -> SKSpriteNode {
         let sp = SKSpriteNode(imageNamed:"blackhole")
         let spTexture = SKTexture(imageNamed: "blackhole")
-        sp.position = GetLeftTopPosition()
+        sp.position = GetCenterPosition()
         sp.setScale(1.5)
         var s = sp.size
         sp.physicsBody = SKPhysicsBody( circleOfRadius: 100)
@@ -28,7 +25,7 @@ class BlackHole {
         sp.physicsBody!.categoryBitMask = GetCategoryBitMask();
         sp.physicsBody!.contactTestBitMask = 1;
 
-        sp.name = "basket"
+        sp.name = "blackhole"
         let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
         sp.runAction(SKAction.repeatActionForever(action))
         
@@ -42,7 +39,7 @@ class BlackHole {
         node.physicsBody!.contactTestBitMask = 0
         let shrink = SKAction.scaleBy(0.8, duration: 0.1)
         node.runAction(shrink)
-        let drawnIn = SKAction.moveTo( BlackHole.GetCenter(), duration: 1)
+        let drawnIn = SKAction.moveTo( BlackHole.GetCenterPosition(), duration: 1)
         node.runAction(drawnIn, completion: { () -> Void in
             node.removeFromParent()
         })
