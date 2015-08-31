@@ -65,30 +65,56 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
-    func goal(node:SKNode) {
-        score++
-        myLabel.text = "Score: \(score)"
-        BlackHole.Eat(node)
-    }
-    
     
     func didBeginContact(contact:SKPhysicsContact){
         if (contact.bodyA != nil && contact.bodyA.node != nil && contact.bodyB != nil && contact.bodyB.node != nil)
         {
             let node2:SKNode = contact.bodyB.node!;
             let node1:SKNode = contact.bodyA.node!
-            let nameA = node1.name;
-            let nameB = node2.name;
-            if ( nameA == "ball" && nameB == "blackhole")
+            let name1 = node1.name;
+            let name2 = node2.name;
+            if ( name1 == "ball" && name2 == "blackhole")
             {
                 goal(node1)
             }
-            else if ( nameB == "ball" && nameA == "blackhole")
+            else if ( name2 == "ball" && name1 == "blackhole")
             {
                 goal(node2)
             }
+            else if ( name1 == "hero" && name2 == "blackhole")
+            {
+                heroIntoBlackHole(node1)
+            }
+            else if ( name2 == "hero" && name1 == "blackhole")
+            {
+                heroIntoBlackHole(node2)
+            }
+
         }
     }
+    
+    func heroIntoBlackHole(node:SKNode) {
+        node.name = "deadhero"
+        node.physicsBody!.allowsRotation = true
+        node.physicsBody!.categoryBitMask = 0
+        node.physicsBody!.collisionBitMask = 0
+        node.physicsBody!.contactTestBitMask = 0
+        let rot = SKAction.rotateByAngle(10, duration: 1)
+        node.runAction(rot)
+        let shrink = SKAction.scaleBy(0.2, duration: 1)
+        node.runAction(shrink)
+        let drawnIn = SKAction.moveTo( BlackHole.GetCenterPosition(), duration: 1)
+        node.runAction(drawnIn, completion: { () -> Void in
+            self.gameOver()
+        })
+    }
+    
+    func goal(node:SKNode) {
+        score++
+        myLabel.text = "Score: \(score)"
+        BlackHole.EatBall(node)
+    }
+
     
     func addBricks() {
         let spTexture = SKTexture(imageNamed: "brick")
@@ -131,14 +157,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             timeRemainingLabel.text = "Time remaining: \(count--)"
         }
         else {
-            timer.invalidate()
-            let transition = SKTransition.revealWithDirection(SKTransitionDirection.Down, duration: 1.0)
-            
-            let scene = GameOverScene(size: self.scene!.size)
-            scene.scaleMode = SKSceneScaleMode.AspectFill
-            scene.score = score
-            self.scene!.view!.presentScene(scene, transition: transition)
+            gameOver()
         }
+    }
+    
+    func gameOver() {
+        timer.invalidate()
+        let transition = SKTransition.revealWithDirection(SKTransitionDirection.Down, duration: 1.0)
+        
+        let scene = GameOverScene(size: self.scene!.size)
+        scene.scaleMode = SKSceneScaleMode.AspectFill
+        scene.score = score
+        self.scene!.view!.presentScene(scene, transition: transition)
         
     }
 

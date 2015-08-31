@@ -76,6 +76,7 @@ class Hero {
         sp.physicsBody!.restitution = 0.1
         sp.physicsBody!.mass = 1
         sp.physicsBody!.allowsRotation = false
+        sp.name = "hero"
 
         return sp
     }

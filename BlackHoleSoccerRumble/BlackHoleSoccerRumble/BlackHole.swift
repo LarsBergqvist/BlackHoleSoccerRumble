@@ -32,12 +32,12 @@ class BlackHole {
         return sp
     }
     
-    class func Eat(node:SKNode) {
+    class func EatBall(node:SKNode) {
         node.name = "deadball"
         node.physicsBody!.categoryBitMask = 0
         node.physicsBody!.collisionBitMask = 0
         node.physicsBody!.contactTestBitMask = 0
-        let shrink = SKAction.scaleBy(0.8, duration: 0.1)
+        let shrink = SKAction.scaleBy(0.1, duration: 1)
         node.runAction(shrink)
         let drawnIn = SKAction.moveTo( BlackHole.GetCenterPosition(), duration: 1)
         node.runAction(drawnIn, completion: { () -> Void in
@@ -45,6 +45,5 @@ class BlackHole {
         })
         
     }
-
    
 }
