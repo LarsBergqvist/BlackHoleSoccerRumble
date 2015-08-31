@@ -1,5 +1,9 @@
 import SpriteKit
 
+typealias GoalHandler = (SKNode -> Void)
+typealias EatHeroHandler = (SKNode -> Void)
+typealias GameOverHandler = (Void -> Void)
+
 class GameScene: SKScene, SKPhysicsContactDelegate {
 
     let hero = Hero()
@@ -8,6 +12,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var score = 0
     var count = 60
     var timer = NSTimer()
+    var collisionDetector : CollisionDetector?
 
     override func didMoveToView(view: SKView) {
         timeRemainingLabel.text = "Time remaining: \(count)"
@@ -24,11 +29,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let physicsBody = SKPhysicsBody (edgeLoopFromRect: self.frame)
         self.physicsBody = physicsBody
         self.name = "edge"
-        self.physicsWorld.contactDelegate = self
+
+        collisionDetector = CollisionDetector(g:goal, e:heroIntoBlackHole)
+        self.physicsWorld.contactDelegate = collisionDetector
         
         self.addChild(BlackHole.CreateSprite())
         addBricks()
-        self.addChild(hero.CreateSprite())
+        self.addChild(hero.createSprite())
         addBalls()
         
         startGame()
@@ -41,17 +48,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     override func keyDown(theEvent: NSEvent) {
         if (theEvent.keyCode == 0x7C){
-            hero.MoveRight()
+            hero.moveRight()
         }
         else if (theEvent.keyCode == 0x7B){
-            hero.MoveLeft()
+            hero.moveLeft()
         }
         
         if (theEvent.keyCode == 49){
-            hero.Jump()
+            hero.jump()
         }
         if (theEvent.keyCode == 0x7D){
-            hero.Stomp()
+            hero.stomp()
         }
     }
     
@@ -65,48 +72,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
-    
-    func didBeginContact(contact:SKPhysicsContact){
-        if (contact.bodyA != nil && contact.bodyA.node != nil && contact.bodyB != nil && contact.bodyB.node != nil)
-        {
-            let node2:SKNode = contact.bodyB.node!;
-            let node1:SKNode = contact.bodyA.node!
-            let name1 = node1.name;
-            let name2 = node2.name;
-            if ( name1 == "ball" && name2 == "blackhole")
-            {
-                goal(node1)
-            }
-            else if ( name2 == "ball" && name1 == "blackhole")
-            {
-                goal(node2)
-            }
-            else if ( name1 == "hero" && name2 == "blackhole")
-            {
-                heroIntoBlackHole(node1)
-            }
-            else if ( name2 == "hero" && name1 == "blackhole")
-            {
-                heroIntoBlackHole(node2)
-            }
-
-        }
-    }
-    
     func heroIntoBlackHole(node:SKNode) {
-        node.name = "deadhero"
-        node.physicsBody!.allowsRotation = true
-        node.physicsBody!.categoryBitMask = 0
-        node.physicsBody!.collisionBitMask = 0
-        node.physicsBody!.contactTestBitMask = 0
-        let rot = SKAction.rotateByAngle(10, duration: 1)
-        node.runAction(rot)
-        let shrink = SKAction.scaleBy(0.2, duration: 1)
-        node.runAction(shrink)
-        let drawnIn = SKAction.moveTo( BlackHole.GetCenterPosition(), duration: 1)
-        node.runAction(drawnIn, completion: { () -> Void in
-            self.gameOver()
-        })
+        BlackHole.eatHero(node,gameOverFunction: self.gameOver)
     }
     
     func goal(node:SKNode) {

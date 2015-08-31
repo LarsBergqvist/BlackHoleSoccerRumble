@@ -8,7 +8,7 @@ class Hero {
     let knightTimePerFrame = 0.1
     let pixelsPerMovement:Float = 20.0
     var sp = SKSpriteNode()
-    let gubbe = knight_gfx()
+    let gfx = knight_gfx()
 
     init() {
         
@@ -24,10 +24,10 @@ class Hero {
         sp.position.y = h/2
     }
     
-    func MoveRight() {
+    func moveRight() {
         if (!rightAnimRunning || leftAnimRunning) {
             sp.xScale = CGFloat(1.0)
-            let walk = SKAction.animateWithTextures(gubbe.Knight_running(), timePerFrame: knightTimePerFrame)
+            let walk = SKAction.animateWithTextures(gfx.Knight_running(), timePerFrame: knightTimePerFrame)
             
             sp.runAction(walk, completion: { () -> Void in
                 self.rightAnimRunning = false
@@ -40,10 +40,10 @@ class Hero {
         sp.runAction(moveAction)
     }
     
-    func MoveLeft() {
+    func moveLeft() {
         if (!leftAnimRunning || rightAnimRunning) {
             sp.xScale = -CGFloat(1.0)
-            let walk = SKAction.animateWithTextures(gubbe.Knight_running(), timePerFrame: knightTimePerFrame)
+            let walk = SKAction.animateWithTextures(gfx.Knight_running(), timePerFrame: knightTimePerFrame)
             
             sp.runAction(walk, completion: { () -> Void in
                 self.leftAnimRunning = false
@@ -56,15 +56,15 @@ class Hero {
         sp.runAction(moveAction)
     }
     
-    func Jump() {
+    func jump() {
         sp.physicsBody?.applyImpulse(CGVectorMake(0, 1000))        
     }
     
-    func Stomp() {
+    func stomp() {
         sp.physicsBody?.applyImpulse(CGVectorMake(0, -3000))        
     }
     
-    func CreateSprite() -> SKSpriteNode {
+    func createSprite() -> SKSpriteNode {
         let sheet = SKTextureAtlas(named: "knight")
         let texture = sheet.textureNamed("Knight1")
         sp = SKSpriteNode(texture: texture)

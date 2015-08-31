@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		804046B71B94D4E100495F0C /* CollisionDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804046B61B94D4E100495F0C /* CollisionDetector.swift */; };
 		80716FD21B9348A100C39C16 /* StartUpScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 80716FD11B9348A100C39C16 /* StartUpScene.sks */; };
 		80716FD41B9349D600C39C16 /* StartUpScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80716FD31B9349D600C39C16 /* StartUpScene.swift */; };
 		80716FD61B934E8700C39C16 /* GameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 80716FD51B934E8700C39C16 /* GameOverScene.sks */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		804046B61B94D4E100495F0C /* CollisionDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollisionDetector.swift; sourceTree = "<group>"; };
 		80716FD11B9348A100C39C16 /* StartUpScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartUpScene.sks; sourceTree = "<group>"; };
 		80716FD31B9349D600C39C16 /* StartUpScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartUpScene.swift; sourceTree = "<group>"; };
 		80716FD51B934E8700C39C16 /* GameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOverScene.sks; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				80716FD31B9349D600C39C16 /* StartUpScene.swift */,
 				80716FD51B934E8700C39C16 /* GameOverScene.sks */,
 				80716FD71B934E9A00C39C16 /* GameOverScene.swift */,
+				804046B61B94D4E100495F0C /* CollisionDetector.swift */,
 			);
 			path = BlackHoleSoccerRumble;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				8090A2941B92FA260040FBB1 /* Hero.swift in Sources */,
 				8090A2901B92FA0C0040FBB1 /* Ball.swift in Sources */,
 				80716FD81B934E9A00C39C16 /* GameOverScene.swift in Sources */,
+				804046B71B94D4E100495F0C /* CollisionDetector.swift in Sources */,
 				8090A2961B92FA310040FBB1 /* knight_gfx.swift in Sources */,
 				8090A2731B92F7820040FBB1 /* GameScene.swift in Sources */,
 				80716FD41B9349D600C39C16 /* StartUpScene.swift in Sources */,

@@ -2,18 +2,18 @@ import Foundation
 import SpriteKit
 
 class BlackHole {
-    class func GetCategoryBitMask() -> UInt32 {
+    class func getCategoryBitMask() -> UInt32 {
         return 0x02
     }
     
-    class func GetCenterPosition() -> CGPoint {
+    class func getCenterPosition() -> CGPoint {
         return CGPoint(x:800, y: 600)
     }
     
     class func CreateSprite() -> SKSpriteNode {
         let sp = SKSpriteNode(imageNamed:"blackhole")
         let spTexture = SKTexture(imageNamed: "blackhole")
-        sp.position = GetCenterPosition()
+        sp.position = getCenterPosition()
         sp.setScale(1.5)
         var s = sp.size
         sp.physicsBody = SKPhysicsBody( circleOfRadius: 100)
@@ -21,8 +21,8 @@ class BlackHole {
         sp.physicsBody!.dynamic = false
         sp.physicsBody!.mass = 1
         sp.physicsBody!.friction = 1
-        sp.physicsBody!.collisionBitMask = GetCategoryBitMask() | 1;
-        sp.physicsBody!.categoryBitMask = GetCategoryBitMask();
+        sp.physicsBody!.collisionBitMask = getCategoryBitMask() | 1;
+        sp.physicsBody!.categoryBitMask = getCategoryBitMask();
         sp.physicsBody!.contactTestBitMask = 1;
 
         sp.name = "blackhole"
@@ -39,11 +39,29 @@ class BlackHole {
         node.physicsBody!.contactTestBitMask = 0
         let shrink = SKAction.scaleBy(0.1, duration: 1)
         node.runAction(shrink)
-        let drawnIn = SKAction.moveTo( BlackHole.GetCenterPosition(), duration: 1)
+        let drawnIn = SKAction.moveTo( BlackHole.getCenterPosition(), duration: 1)
         node.runAction(drawnIn, completion: { () -> Void in
             node.removeFromParent()
         })
         
     }
+    
+    class func eatHero(node:SKNode, gameOverFunction:GameOverHandler) {
+        node.name = "deadhero"
+        node.physicsBody!.allowsRotation = true
+        node.physicsBody!.categoryBitMask = 0
+        node.physicsBody!.collisionBitMask = 0
+        node.physicsBody!.contactTestBitMask = 0
+        let rot = SKAction.rotateByAngle(10, duration: 1)
+        node.runAction(rot)
+        let shrink = SKAction.scaleBy(0.2, duration: 1)
+        node.runAction(shrink)
+        let drawnIn = SKAction.moveTo( BlackHole.getCenterPosition(), duration: 1)
+        node.runAction(drawnIn, completion: { () -> Void in
+            gameOverFunction()
+        })
+        
+    }
+
    
 }
