@@ -39,8 +39,8 @@ class BlackHole {
         node.physicsBody!.contactTestBitMask = 0
         let shrink = SKAction.scaleBy(0.1, duration: 1)
         node.runAction(shrink)
-        let drawnIn = SKAction.moveTo( BlackHole.getCenterPosition(), duration: 1)
-        node.runAction(drawnIn, completion: { () -> Void in
+        let drawnIntoBlackHole = SKAction.moveTo( BlackHole.getCenterPosition(), duration: 1)
+        node.runAction(drawnIntoBlackHole, completion: { () -> Void in
             node.removeFromParent()
         })
         
@@ -56,8 +56,8 @@ class BlackHole {
         node.runAction(rot)
         let shrink = SKAction.scaleBy(0.2, duration: 1)
         node.runAction(shrink)
-        let drawnIn = SKAction.moveTo( BlackHole.getCenterPosition(), duration: 1)
-        node.runAction(drawnIn, completion: { () -> Void in
+        let drawnIntoBlackHole = SKAction.moveTo( BlackHole.getCenterPosition(), duration: 1)
+        node.runAction(drawnIntoBlackHole, completion: { () -> Void in
             gameOverFunction()
         })
         
