@@ -33,7 +33,7 @@ class GameOverScene: SKScene {
             
             let scene = GameScene(size: self.scene!.size)
             scene.backgroundColor = NSColor.blackColor()
-            scene.scaleMode = SKSceneScaleMode.AspectFill
+            scene.scaleMode = SKSceneScaleMode.AspectFit
             
             self.scene!.view!.presentScene(scene, transition: transition)
         }

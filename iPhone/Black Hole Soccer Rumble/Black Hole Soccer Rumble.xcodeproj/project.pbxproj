@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		808480FA1B95841800881961 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808480F91B95841800881961 /* AppDelegate.swift */; };
+		808480FC1B95841800881961 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 808480FB1B95841800881961 /* GameScene.sks */; };
+		808480FE1B95841800881961 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808480FD1B95841800881961 /* GameScene.swift */; };
+		808481001B95841800881961 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808480FF1B95841800881961 /* GameViewController.swift */; };
+		808481031B95841800881961 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808481011B95841800881961 /* Main.storyboard */; };
+		808481051B95841800881961 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808481041B95841800881961 /* Images.xcassets */; };
+		808481081B95841800881961 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808481061B95841800881961 /* LaunchScreen.xib */; };
+		808481141B95841800881961 /* Black_Hole_Soccer_RumbleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808481131B95841800881961 /* Black_Hole_Soccer_RumbleTests.swift */; };
+		8084811E1B95844E00881961 /* BlackHole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8084811D1B95844E00881961 /* BlackHole.swift */; };
+		808481211B95847700881961 /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8084811F1B95847700881961 /* Ball.swift */; };
+		808481221B95847700881961 /* CollisionDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808481201B95847700881961 /* CollisionDetector.swift */; };
+		808481251B95849600881961 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808481231B95849600881961 /* Hero.swift */; };
+		808481261B95849600881961 /* knight_gfx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808481241B95849600881961 /* knight_gfx.swift */; };
+		808481281B9584AC00881961 /* knight.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 808481271B9584AC00881961 /* knight.atlasc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8084810E1B95841800881961 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808480EC1B95841800881961 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 808480F31B95841800881961;
+			remoteInfo = "Black Hole Soccer Rumble";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		808480F41B95841800881961 /* Black Hole Soccer Rumble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Black Hole Soccer Rumble.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		808480F81B95841800881961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		808480F91B95841800881961 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		808480FB1B95841800881961 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		808480FD1B95841800881961 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		808480FF1B95841800881961 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		808481021B95841800881961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		808481041B95841800881961 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		808481071B95841800881961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8084810D1B95841800881961 /* Black Hole Soccer RumbleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Black Hole Soccer RumbleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		808481121B95841800881961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		808481131B95841800881961 /* Black_Hole_Soccer_RumbleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Black_Hole_Soccer_RumbleTests.swift; sourceTree = "<group>"; };
+		8084811D1B95844E00881961 /* BlackHole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackHole.swift; sourceTree = "<group>"; };
+		8084811F1B95847700881961 /* Ball.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
+		808481201B95847700881961 /* CollisionDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollisionDetector.swift; sourceTree = "<group>"; };
+		808481231B95849600881961 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		808481241B95849600881961 /* knight_gfx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knight_gfx.swift; sourceTree = "<group>"; };
+		808481271B9584AC00881961 /* knight.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = knight.atlasc; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		808480F11B95841800881961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8084810A1B95841800881961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		808480EB1B95841800881961 = {
+			isa = PBXGroup;
+			children = (
+				808480F61B95841800881961 /* Black Hole Soccer Rumble */,
+				808481101B95841800881961 /* Black Hole Soccer RumbleTests */,
+				808480F51B95841800881961 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		808480F51B95841800881961 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				808480F41B95841800881961 /* Black Hole Soccer Rumble.app */,
+				8084810D1B95841800881961 /* Black Hole Soccer RumbleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		808480F61B95841800881961 /* Black Hole Soccer Rumble */ = {
+			isa = PBXGroup;
+			children = (
+				808481271B9584AC00881961 /* knight.atlasc */,
+				808481231B95849600881961 /* Hero.swift */,
+				808481241B95849600881961 /* knight_gfx.swift */,
+				8084811F1B95847700881961 /* Ball.swift */,
+				808481201B95847700881961 /* CollisionDetector.swift */,
+				8084811D1B95844E00881961 /* BlackHole.swift */,
+				808480F91B95841800881961 /* AppDelegate.swift */,
+				808480FB1B95841800881961 /* GameScene.sks */,
+				808480FD1B95841800881961 /* GameScene.swift */,
+				808480FF1B95841800881961 /* GameViewController.swift */,
+				808481011B95841800881961 /* Main.storyboard */,
+				808481041B95841800881961 /* Images.xcassets */,
+				808481061B95841800881961 /* LaunchScreen.xib */,
+				808480F71B95841800881961 /* Supporting Files */,
+			);
+			path = "Black Hole Soccer Rumble";
+			sourceTree = "<group>";
+		};
+		808480F71B95841800881961 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				808480F81B95841800881961 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		808481101B95841800881961 /* Black Hole Soccer RumbleTests */ = {
+			isa = PBXGroup;
+			children = (
+				808481131B95841800881961 /* Black_Hole_Soccer_RumbleTests.swift */,
+				808481111B95841800881961 /* Supporting Files */,
+			);
+			path = "Black Hole Soccer RumbleTests";
+			sourceTree = "<group>";
+		};
+		808481111B95841800881961 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				808481121B95841800881961 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		808480F31B95841800881961 /* Black Hole Soccer Rumble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 808481171B95841800881961 /* Build configuration list for PBXNativeTarget "Black Hole Soccer Rumble" */;
+			buildPhases = (
+				808480F01B95841800881961 /* Sources */,
+				808480F11B95841800881961 /* Frameworks */,
+				808480F21B95841800881961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Black Hole Soccer Rumble";
+			productName = "Black Hole Soccer Rumble";
+			productReference = 808480F41B95841800881961 /* Black Hole Soccer Rumble.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8084810C1B95841800881961 /* Black Hole Soccer RumbleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8084811A1B95841800881961 /* Build configuration list for PBXNativeTarget "Black Hole Soccer RumbleTests" */;
+			buildPhases = (
+				808481091B95841800881961 /* Sources */,
+				8084810A1B95841800881961 /* Frameworks */,
+				8084810B1B95841800881961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8084810F1B95841800881961 /* PBXTargetDependency */,
+			);
+			name = "Black Hole Soccer RumbleTests";
+			productName = "Black Hole Soccer RumbleTests";
+			productReference = 8084810D1B95841800881961 /* Black Hole Soccer RumbleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		808480EC1B95841800881961 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Lars Bergqvist";
+				TargetAttributes = {
+					808480F31B95841800881961 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					8084810C1B95841800881961 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 808480F31B95841800881961;
+					};
+				};
+			};
+			buildConfigurationList = 808480EF1B95841800881961 /* Build configuration list for PBXProject "Black Hole Soccer Rumble" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 808480EB1B95841800881961;
+			productRefGroup = 808480F51B95841800881961 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				808480F31B95841800881961 /* Black Hole Soccer Rumble */,
+				8084810C1B95841800881961 /* Black Hole Soccer RumbleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		808480F21B95841800881961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				808481081B95841800881961 /* LaunchScreen.xib in Resources */,
+				808481051B95841800881961 /* Images.xcassets in Resources */,
+				808481281B9584AC00881961 /* knight.atlasc in Resources */,
+				808480FC1B95841800881961 /* GameScene.sks in Resources */,
+				808481031B95841800881961 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8084810B1B95841800881961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		808480F01B95841800881961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				808481221B95847700881961 /* CollisionDetector.swift in Sources */,
+				808480FE1B95841800881961 /* GameScene.swift in Sources */,
+				808481001B95841800881961 /* GameViewController.swift in Sources */,
+				808481211B95847700881961 /* Ball.swift in Sources */,
+				808481261B95849600881961 /* knight_gfx.swift in Sources */,
+				808481251B95849600881961 /* Hero.swift in Sources */,
+				808480FA1B95841800881961 /* AppDelegate.swift in Sources */,
+				8084811E1B95844E00881961 /* BlackHole.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		808481091B95841800881961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				808481141B95841800881961 /* Black_Hole_Soccer_RumbleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8084810F1B95841800881961 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 808480F31B95841800881961 /* Black Hole Soccer Rumble */;
+			targetProxy = 8084810E1B95841800881961 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		808481011B95841800881961 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				808481021B95841800881961 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		808481061B95841800881961 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				808481071B95841800881961 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		808481151B95841800881961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		808481161B95841800881961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		808481181B95841800881961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Black Hole Soccer Rumble/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		808481191B95841800881961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Black Hole Soccer Rumble/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8084811B1B95841800881961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Black Hole Soccer RumbleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Black Hole Soccer Rumble.app/Black Hole Soccer Rumble";
+			};
+			name = Debug;
+		};
+		8084811C1B95841800881961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Black Hole Soccer RumbleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Black Hole Soccer Rumble.app/Black Hole Soccer Rumble";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		808480EF1B95841800881961 /* Build configuration list for PBXProject "Black Hole Soccer Rumble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				808481151B95841800881961 /* Debug */,
+				808481161B95841800881961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		808481171B95841800881961 /* Build configuration list for PBXNativeTarget "Black Hole Soccer Rumble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				808481181B95841800881961 /* Debug */,
+				808481191B95841800881961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8084811A1B95841800881961 /* Build configuration list for PBXNativeTarget "Black Hole Soccer RumbleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8084811B1B95841800881961 /* Debug */,
+				8084811C1B95841800881961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 808480EC1B95841800881961 /* Project object */;
+}
