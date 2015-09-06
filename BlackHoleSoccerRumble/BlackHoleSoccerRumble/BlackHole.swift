@@ -17,13 +17,13 @@ class BlackHole {
         sp.setScale(1.5)
         var s = sp.size
         sp.physicsBody = SKPhysicsBody( circleOfRadius: 100)
-        sp.physicsBody!.allowsRotation = false
-        sp.physicsBody!.dynamic = false
-        sp.physicsBody!.mass = 1
-        sp.physicsBody!.friction = 1
-        sp.physicsBody!.collisionBitMask = getCategoryBitMask() | 1;
-        sp.physicsBody!.categoryBitMask = getCategoryBitMask();
-        sp.physicsBody!.contactTestBitMask = 1;
+        sp.physicsBody?.allowsRotation = false
+        sp.physicsBody?.dynamic = false
+        sp.physicsBody?.mass = 1
+        sp.physicsBody?.friction = 1
+        sp.physicsBody?.collisionBitMask = getCategoryBitMask() | 1;
+        sp.physicsBody?.categoryBitMask = getCategoryBitMask();
+        sp.physicsBody?.contactTestBitMask = 1;
 
         sp.name = "blackhole"
         let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
@@ -34,9 +34,9 @@ class BlackHole {
     
     class func EatBall(node:SKNode) {
         node.name = "deadball"
-        node.physicsBody!.categoryBitMask = 0
-        node.physicsBody!.collisionBitMask = 0
-        node.physicsBody!.contactTestBitMask = 0
+        node.physicsBody?.categoryBitMask = 0
+        node.physicsBody?.collisionBitMask = 0
+        node.physicsBody?.contactTestBitMask = 0
         let shrink = SKAction.scaleBy(0.1, duration: 1)
         node.runAction(shrink)
         let drawnIntoBlackHole = SKAction.moveTo( BlackHole.getCenterPosition(), duration: 1)
@@ -48,10 +48,10 @@ class BlackHole {
     
     class func eatHero(node:SKNode, gameOverFunction:GameOverHandler) {
         node.name = "deadhero"
-        node.physicsBody!.allowsRotation = true
-        node.physicsBody!.categoryBitMask = 0
-        node.physicsBody!.collisionBitMask = 0
-        node.physicsBody!.contactTestBitMask = 0
+        node.physicsBody?.allowsRotation = true
+        node.physicsBody?.categoryBitMask = 0
+        node.physicsBody?.collisionBitMask = 0
+        node.physicsBody?.contactTestBitMask = 0
         let rot = SKAction.rotateByAngle(10, duration: 1)
         node.runAction(rot)
         let shrink = SKAction.scaleBy(0.2, duration: 1)

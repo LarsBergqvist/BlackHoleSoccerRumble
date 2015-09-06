@@ -57,11 +57,11 @@ class Hero {
     }
     
     func jump() {
-        sp.physicsBody?.applyImpulse(CGVectorMake(0, 1000))        
+        sp.physicsBody?.applyImpulse(CGVectorMake(0, 800))
     }
     
     func stomp() {
-        sp.physicsBody?.applyImpulse(CGVectorMake(0, -3000))        
+        sp.physicsBody?.applyImpulse(CGVectorMake(0, -3000))
     }
     
     func createSprite() -> SKSpriteNode {
@@ -72,10 +72,10 @@ class Hero {
         sp.setScale(CGFloat(1.0))
         
         sp.physicsBody = SKPhysicsBody(texture: texture, size: sp.size)
-        sp.physicsBody!.friction = 0.6
-        sp.physicsBody!.restitution = 0.1
-        sp.physicsBody!.mass = 1
-        sp.physicsBody!.allowsRotation = false
+        sp.physicsBody?.friction = 0.6
+        sp.physicsBody?.restitution = 0.1
+        sp.physicsBody?.mass = 1
+        sp.physicsBody?.allowsRotation = false
         sp.name = "hero"
 
         return sp

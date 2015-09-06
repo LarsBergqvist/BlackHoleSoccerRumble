@@ -95,8 +95,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
             let physicsBody = SKPhysicsBody(texture: spTexture, size: sp.size)
             physicsBody.allowsRotation = false
-            physicsBody!.dynamic = false
-            physicsBody!.mass = 1
+            physicsBody.dynamic = false
+            physicsBody.mass = 1
             
             
             sp.physicsBody = physicsBody
@@ -135,7 +135,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let scene = GameOverScene(size: self.scene!.size)
         scene.scaleMode = SKSceneScaleMode.AspectFill
         scene.score = score
-        self.scene!.view!.presentScene(scene, transition: transition)
+        self.scene?.view?.presentScene(scene, transition: transition)
         
     }
 

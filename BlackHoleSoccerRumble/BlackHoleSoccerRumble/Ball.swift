@@ -11,13 +11,13 @@ class Ball {
         sp.position = CGPoint(x:xpos, y:ypos)
         sp.setScale(1)
         sp.physicsBody = SKPhysicsBody(texture: spTexture, size: sp.size)
-        sp.physicsBody!.friction = 0.3
-        sp.physicsBody!.restitution = 0.8
-        sp.physicsBody!.mass = 0.01
-        sp.physicsBody!.allowsRotation = true
-        sp.physicsBody!.collisionBitMask = BlackHole.getCategoryBitMask() | getCategoryBitMask();
-        sp.physicsBody!.categoryBitMask = getCategoryBitMask();
-        sp.physicsBody!.contactTestBitMask = BlackHole.getCategoryBitMask();
+        sp.physicsBody?.friction = 0.3
+        sp.physicsBody?.restitution = 0.8
+        sp.physicsBody?.mass = 0.01
+        sp.physicsBody?.allowsRotation = true
+        sp.physicsBody?.collisionBitMask = BlackHole.getCategoryBitMask() | getCategoryBitMask();
+        sp.physicsBody?.categoryBitMask = getCategoryBitMask();
+        sp.physicsBody?.contactTestBitMask = BlackHole.getCategoryBitMask();
         sp.name = "ball"
         
         return sp

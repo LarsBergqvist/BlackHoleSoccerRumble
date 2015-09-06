@@ -34,7 +34,7 @@ class StartUpScene: SKScene {
             scene.scaleMode = SKSceneScaleMode.AspectFit
             scene.backgroundColor = NSColor.blackColor()
 
-            self.scene!.view!.presentScene(scene, transition: transition)
+            self.scene?.view?.presentScene(scene, transition: transition)
         }
     }
 
